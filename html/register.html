@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="form_register">
+            <div id="heading">
+                <p>Create an account</p>
+                <div>
+                    <span>Already Registered?</span>
+                    <span>Log in here</span>
+                </div>
+            </div>
+            <div id="content">
+                <label for="name">Name</label><br>
+                <input type="text" placeholder="Jason Hardley" id="name"><br>
+                <label for="email">Email</label><br>
+                <input onchange="regexEmail()" type="text" placeholder="Your email" id="email"><br>
+                <span id="errorEmail">*Email không đúng định dạng*</span>
+                <label for="password">Password</label><br>
+                <input onchange="regexPassword()" type="text" placeholder="Create your password" id="password"><br>
+                <span id="errorPassword">*Password không đúng định dạng*</span>
+                <label for="confirm">Confirm password</label><br>
+                <input onchange="confirmPass()" type="text" placeholder="Enter your password" id="confirm"><br>
+                <span id="errorConfirm">*Mật khẩu không trùng*</span>
+                <input onclick="register()" type="submit" value="Register">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/register.js"></script>
+</html>

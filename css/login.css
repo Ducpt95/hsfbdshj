@@ -1,0 +1,69 @@
+:root{
+    --color-primary:rgb(26,43,72);
+    --color-secondary:rgb(255,255,255);
+    --color-third:rgb(44,44,44);
+    --color-fourth:rgba(223, 105, 81, 1);
+    --color-fifth:rgba(94, 98, 130, 1);
+    --fontsize-xs:0.7rem;
+    --fontsize-small:1.18rem;
+    --fontsize-normal:1.6rem;
+    --fontsize-large:2.3rem;
+    --fontsize-xl:4.9rem;
+}
+html{
+    font-size: 16px;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+#wrapper{
+    width:100%;
+}
+#form_register{
+    width:50%;
+    height:80%;
+    margin:10% auto;
+    border:3px solid var(--color-primary);
+    padding:20px;
+}
+#heading{
+
+}
+#heading p{
+    color:var(--color-primary);
+    font-size: var(--fontsize-large);
+    text-align:center;
+}
+#heading div{
+    color:var(--color-primary);
+    font-size: small;
+    text-align: center;
+}
+#content{
+color:var(--color-primary);
+font-size: var(--fontsize-normal);
+padding-left:15%;
+}
+#content label{}
+#content input{
+    width:80%;
+    height:50px;
+}
+#content input:last-child{
+    background-color: var(--color-primary);
+    color:var(--color-secondary);
+    font-size:var(--fontsize-small);
+    margin-top:10px;
+}
+#errorEmail {
+color: red;
+font-size: 16px;
+display:none;
+}
+#errorPassword{
+color: red;
+font-size: 16px;
+display:none;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="form_register">
+            <div id="heading">
+                <p>LOGIN</p>
+                <div>
+                    <span>Not registered yet?</span>
+                </div>
+            </div>
+            <div id="content">
+                <label for="name">Name</label><br>
+                <input type="text" placeholder="Jason Hardley" id="name"><br>
+                <label for="email">Email</label><br>
+                <input onchange="checkEmail()" type="text" placeholder="Your email" id="email"><br>
+                <span id="errorEmail">*Email không tồn tại*</span><br>
+                <label for="password">Password</label><br>
+                <input onchange="checkPassword()" type="text" placeholder="Enter your password" id="password"><br>
+                <span id="errorPassword">*Password không đúng*</span><br>
+                <input id="remember" style="width:20px;" type="checkbox"> 
+                <label for="remember">Remember me!</label>
+                <input onclick="login()" type="submit" value="Log in">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/login.js"></script>
+</html>
